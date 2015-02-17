@@ -1,0 +1,39 @@
+<header class="row page-header">
+
+	<div class="col-md-4 pull-left">
+    <a href="{{ root_url }}{{ post.url }}" class="thumbnail">
+		  <img class="img-responsive" src="http://placehold.it/1024x768">
+			{% if post.img1-s-lan %}
+				{% include arc-img-lan.html %}
+			{% elsif post.img1-s-por %}
+				{% include arc-img-por.html %}
+			{% endif %}
+    </a>
+	</div>
+
+	<div class="col-md-8 pull-right">
+	  <h4 class="archive-title accent">			   
+      Article #{{ post.number }} &ndash; <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time> |
+ 
+			{% if site.disqus_short_name and page.comments != false and site.disqus_show_comment_count == true %}
+				<a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
+  		{% endif %}
+	  </h4>
+    <h5>
+	  <span class="archive-title accent">
+			<a href="{{ root_url }}{{ post.url }}">
+				{{post.title}} {{ post.subtitle }}
+			</a> &ndash;
+		</span>
+		<span> 
+			{% include post/categories.html %} |
+			{% include post/tags.html %}
+		</span>
+    </h5>
+	  <p class="article-intro">
+	    {{post.int1 | truncate:250 }}
+	    <a class="read-on" href="{{ root_url }}{{ post.url }}"> continued &rarr;</a> 
+	  </p>
+	</div>
+
+</header>

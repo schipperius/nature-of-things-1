@@ -1,0 +1,40 @@
+# Site Settings
+# ----------------------- #
+# Main Configs            #
+# ----------------------- #
+
+url: http://schipperius.org
+title: the Nature of Things
+subtitle: an exploration of the natural world via patterns, structures, processes and such
+author: Mark Schipper
+simple_search: https://www.google.com/search
+description: the Nature of Things; an exploration of the natural world via patterns, structures, processes and such
+
+# Default date format is "ordinal" (resulting in "July 22nd 2007")
+# You can customize the format as defined in
+# http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
+# Additionally, %o will give you the ordinal representation of the day
+date_format: "ordinal"
+
+# RSS / Email (optional) subscription links (change if using something like Feedburner)
+subscribe_rss: /atom.xml
+subscribe_email:
+# RSS feeds can list your email address if you like
+
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://schipperius.org" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+sass:
+    sass_dir: assets/_sass
+    style: :compressed
+
+plugins: plugins    
+category_dir: categories
+tag_dir: tags
+
+root: /
+permalink: /:title

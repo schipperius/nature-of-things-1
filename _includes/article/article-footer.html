@@ -1,0 +1,17 @@
+<div class="row"> <!-- pagination -->
+  <ul class="nav nav-pills pull-right">
+      {% if page.previous.url %}
+      <li class="previous"><a class="basic-alignment left"
+        href="{{ page.previous.url }}" title="Previous Article:
+        {{ page.previous.title }}">&laquo; Previous Article</a></li>
+      {% endif %}
+
+      {% if page.next.url %}
+      <li class="next"><a class="basic-alignment right" href="{{ page.next.url }}"
+        title="Next Article: {{ page.next.title }}">Next Article
+        &raquo;</a></li>
+      {% endif %}
+   	</ul>
+
+</div> <!-- /pagination -->
+</br>

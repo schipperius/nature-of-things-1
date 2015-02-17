@@ -1,0 +1,45 @@
+<!-- Article Header
+======================================================= -->
+
+{% unless page.no_header %}
+
+<div class="row ">
+
+	<div id="{{ page.img1-fnref}}" class="col-md-4 article-image">
+	  <div>
+	  	<img class="thumbnail img-responsive" src="http://placehold.it/1024x768">
+			{% if page.img1-m-lan %}
+				{% include post/articles/imgs/img1-lan.html %}
+			{% elsif page.img1-m-por %}
+				{% include post/articles/imgs/img1-por.html %}
+			{% endif %}
+			
+			<sup class="footnote pull-right">
+		  	<a href="#{{ page.img1-fn }}">[1]</a>
+		  </sup>
+	  </div>
+	</div>
+
+	<div id="{{ page.int1-fnref }}" class="col-md-8">
+    <h4 id="{{ page.int1-fnref}}" class="accent">
+			#{{ page.number }} {{ page.title }} {{ page.subtitle }}
+      <span class="small-date">{% include post/date.html %}
+				{{ post.date | '%B %d, %Y' }}
+			{% if updated %}
+				{{ updated }}
+			{% endif %}</span>
+    </h4>
+		<h4>
+			{% include post/categories.html %} |
+			{% include post/tags.html %}
+		</h4>
+		<h2 class="first-letter">
+		  <span class="{{ page.int1-class }}"><img src="{{ page.int1-letter }}" width="{{ page.int1-img-wd }}" height="{{ page.int1-img-ht}}"></span>
+			<small><span class="first-line">{{ page.int1-lin1 }}</span> <span class="last-line">{{ page.int1-lin2 }}<sup class="footnote"> <a href="#{{ page.int1-fn }}">[2]</a></sup></span></small>
+		</h2>
+		<br/>		
+	</div>
+
+</div>
+
+{% endunless %}

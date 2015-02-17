@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {% include main/head.html %}
+  <body>
+    {% include main/header.html %}
+    <div class="page-content container">
+      <div class="col-md-8">
+         {{ content }}
+      </div>
+      <div class="col-md-4">
+        {% include aside/aside_list.html %}
+      </div>
+    </div><!-- /.container -->
+    {% include main/footer.html %}
+    {% include main/footer-after.html %}
+  </body>
+</html>

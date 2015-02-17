@@ -1,0 +1,22 @@
+<section>
+  <ul id="categories" class="list-group nav nav-list">
+		<li class="list-group-item active">Categories</li>
+    {% category_list %}
+  </ul>
+</section>
+
+<section>
+  <ul id="tags" class="list-group nav nav-list">
+    <li class="list-group-item active">Related</li>
+    {% tag_list %}  
+  </ul>
+</section>
+
+<section>
+  <ul id="posts" class="list-group nav nav-list">
+		<li class="list-group-item active">New</li>
+    {% for post in site.posts %}
+    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </>
+    {% endfor %}
+  </ul>
+</section>
