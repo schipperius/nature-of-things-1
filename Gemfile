@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'bootstrap-sass', '~> 3.3.3'
-gem 'octopress-ink'
+gem "bootstrap-sass", "~> 3.3.3"
 
 group :jekyll_plugins do
-  gem 'octopress-asset-pipeline'
+  gem "octopress-asset-pipeline"
 end
 
-# Specify your gem's dependencies in octopress.gemspec
-gemspec
+gem 'stringex', '~> 1.4.0'
+gem 'ruby', '~> 2.1.5'
