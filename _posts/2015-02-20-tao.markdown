@@ -4,8 +4,8 @@ layout: post
 title:  "the Tao"
 date:   2015-02-16 18:30
 
-categories: [Spirituality]
-tags: [Taoism, Philosophy]
+categories: [TestCategories, TestCat3]
+tags: [TestTags, TestTag3]
 
 ---
 

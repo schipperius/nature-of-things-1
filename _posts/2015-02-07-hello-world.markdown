@@ -2,9 +2,10 @@
 number: 2
 layout: post
 title: "Hello World"
-categories: [Front, Mustard, Time]
-tags: [When, Where]
 date: 2015-02-07 18:30
+
+categories: [TestCategories, TestCat2]
+tags: [TestTags, TestTag2]
 
 int1: I'm standing here at the mouth of the Oude Rijn, an ancient branch of the Rhine river that formed the northernmost boundary of the Roman Empire.
 

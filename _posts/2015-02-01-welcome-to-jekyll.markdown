@@ -3,8 +3,8 @@ number: 1
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2015-02-01 18:30
-categories: [Front, Mustard]
-tags: [When, Where]
+categories: [TestCategories]
+tags: [TestTags]
 
 int1: I’m standing here in the printing room at the Museum Plantin-Moretus in Antwerp Belgium. This was the stately town-home, and the printing and publishing house of Christophe Plantin, a famous 16th Century publisher.
 
