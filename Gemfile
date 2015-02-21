@@ -5,3 +5,4 @@ ruby '2.0.0'
 # gemspec
 
 gem 'octopress', '~> 3.0.0.rc.33'
+gem 'puma', '~> 2.11.1'
